@@ -100,20 +100,10 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				css : {color:'000000', 'font-size':'3em'}, 
 				media : {word:'+'}
 			}, 
-			//The mask stimulus in the example block
-			exampleMaskStimulus : {
-				css : {color:'000000', 'font-size':'3em'}, 
-				media : {image:'ampmaskr.jpg'}
-			}, 
-			//The mask stimulus 
-			maskStimulus : {
-				css : {color:'000000', 'font-size':'3em'}, 
-				media : {image:'ampmask.jpg'}
-			}, 
 			
 			
-			sortingLabel1 : 'Pleasant', //Response is coded as 0. 
-			sortingLabel2 : 'Unpleasant',  //Response is coded as 1.
+			sortingLabel1 : 'real', //Response is coded as 0. 
+			sortingLabel2 : 'made-up',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
@@ -127,7 +117,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 
 			trialsInBlock : [40, 40, 40], //Number of trials in each block 
-			trialsInExample : 3, //Change to 0 if you don't want an example block
+			trialsInExample : 2, //Change to 0 if you don't want an example block
 			
 			//Duration parameters.
 			fixationDuration : -1, //It means that by default we do not use fixation.
